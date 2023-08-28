@@ -19,6 +19,7 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        saveDefaultConfig();
         getCommand("egg_iron").setExecutor(new GiveItems(this));
         getServer().getPluginManager().registerEvents(new BukkitListener(this), this);
 
