@@ -1,0 +1,9 @@
+name: LDHolyMobs
+author: [ ConderFix ]
+description: Плагин на яйцо голема
+website: vk.com/conderfix
+version: 1.0
+main: me.leddev.holymobs.Main
+api-version: '1.16'
+commands:
+  egg_iron:
