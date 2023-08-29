@@ -31,13 +31,12 @@ public class GiveItems implements CommandExecutor {
 
         if (player == null) {
             sender.sendMessage("Игрок не найден.");
-            return false;
+            return true;
         }
 
-        // Проверка прав доступа
         if (!sender.hasPermission("ld.admin")) {
             sender.sendMessage("У вас недостаточно прав для использования этой команды.");
-            return false;
+            return true;
         }
 
         ItemStack itemStack = new ItemStack(Material.GHAST_SPAWN_EGG, 1);
